@@ -1,0 +1,823 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="icon" href="img/lazy-low.jpg" type="image/png">
+    <title>Kanchan Gaware | Portfolio</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="vendors/linericon/style.css" >
+    <link rel="stylesheet" href="css/font-awesome.min.css" >
+    <link rel="stylesheet" href="vendors/owl-carousel/owl.carousel.min.css" >
+    <link rel="stylesheet" href="css/magnific-popup.css" >
+    <link rel="stylesheet" href="vendors/nice-select/css/nice-select.css" >
+    <!-- main css -->
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+
+  <body>
+    <!--================ Start Header Area =================-->
+    <header class="header_area">
+      <div class="main_menu">
+        <nav class="navbar navbar-expand-lg navbar-light">
+          <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <a class="navbar-brand logo_h" onclick="changeColor('navdoc1','Home')" href="#hometop">
+              <h1>
+                <span><h1><</h1></span>
+                Kanchan Gaware
+                <span><h1>/></h1></span>
+              </h1>
+            </a>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-toggle="collapse"
+              data-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div
+              class="collapse navbar-collapse offset"
+              id="navbarSupportedContent"
+            >
+              <ul class="nav navbar-nav menu_nav justify-content-end" >
+                <li class="nav-item" onclick="changeColor(id,'Home')" id="navdoc1" >
+                  <a class="nav-link" href="#hometop">Home</a>
+                </li>
+                <li class="nav-item" onclick="changeColor(id, 'About')" id="navdoc2" >
+                  <a class="nav-link" href="#about">About</a>
+                </li>
+                <li class="nav-item" onclick="changeColor(id, 'Experience')" id="navdoc3" >
+                  <a class="nav-link" href="#experiencediv">Experience</a>
+                </li>
+                <li class="nav-item" onclick="changeColor(id, 'Education')" id="navdoc4">
+                  <a class="nav-link" href="#educatiodiv">Education</a>
+                </li>
+                <li class="nav-item" onclick="changeColor(id, 'Skills')" id="navdoc5" >
+                  <a class="nav-link" href="#featurediv">Skills</a>
+                </li>
+                <li class="nav-item" onclick="changeColor(id, 'Projects')" id="navdoc6" >
+                  <a class="nav-link" href="#portfolio">Projects</a>
+                </li>
+                <li class="nav-item" onclick="changeColor(id, 'Contact Me')" id="navdoc7" >
+                  <a class="nav-link" href="#contactme">Contact Me</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <script>
+      function changeColor(id, str){
+        if(str==="Home"){
+          document.title=`Kanchan Gaware | Portfolio`
+        }
+        else{
+
+          document.title=`${str}  | Kanchan`;
+        }
+        let myele=document.getElementById(id);
+        myele.setAttribute("class", "nav-item colorchange");
+
+        for(let i=1; i<=7; i++)
+        {
+          let myid=`navdoc${i}`;
+          let ele=document.getElementById(myid);
+          if(myid!=id)
+          {
+            ele.setAttribute("class", "nav-item");
+          }
+        }
+      }
+    </script>
+    <!--================ End Header Area =================-->
+
+    <!--================ Start Home Banner Area =================-->
+    <section class="home_banner_area">
+      <div class="banner_inner" id="hometop">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-7">
+              <div class="banner_content">
+                <h3 class="text-uppercase">Hello</h3>
+                <h1 class="text-uppercase">I am </h1>
+                  <h1 class="text-uppercase"><span>Kanchan Gaware</span></h1>
+                <h5 class="text-uppercase">Full Stack Web Developer</h5>
+                <div class="d-flex align-items-center">
+                  <a class="primary_btn" onclick="changeColor('navdoc5', 'Contact Me')" href="#contactme"><span>Hire Me</span></a>
+                  <a
+                    target="_blank"
+                    class="primary_btn tr-bg"
+                    href="https://publuu.com/flip-book/931803/2042631"
+                    ><span>Get Resume</span></a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-5">
+              <div class="home_right_img profilepic">
+                <img class="" loading="lazy" src="img/portfolio/lazy-low.jpg"  data-src="img/banner/home-right-2.png" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--================ End Home Banner Area =================-->
+
+    <!-- ===============scroll bottom button ============ -->
+<!-- <a onclick="changeColor('navdoc7', 'Contact Me')" href="#contactme" class="fixed-arrow" id="fixed-up-arrow"><div>
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><path d="M192 384c-8.188 0-16.38-3.125-22.62-9.375l-160-160c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0L192 306.8l137.4-137.4c12.5-12.5 32.75-12.5 45.25 0s12.5 32.75 0 45.25l-160 160C208.4 380.9 200.2 384 192 384z"/></svg>
+</div>    </a> -->
+ <!-- ===============scroll bottom button ============ -->
+
+ <!-- ===============scroll down button ============ -->
+ <a onclick="changeColor('navdoc2','About')" href="#about" id="fixed-up-arrow"><div>
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><!--! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M192 384c-8.188 0-16.38-3.125-22.62-9.375l-160-160c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0L192 306.8l137.4-137.4c12.5-12.5 32.75-12.5 45.25 0s12.5 32.75 0 45.25l-160 160C208.4 380.9 200.2 384 192 384z"/></svg>
+</div>    </a>
+ <!-- ===============scroll down button ============ -->
+
+
+    <!--================ Start About Us Area =================-->
+    <section class="about_area section_gap">
+      <div class="container">
+        <div class="row justify-content-start align-items-center" id="about">
+          <div class="col-lg-5">
+            <div class="about_img">
+              <img class="" loading="lazy" src="img/portfolio/lazy-low.jpg" data-src="img/about-us.svg" alt="" />
+            </div>
+          </div>
+
+          <div class="offset-lg-1 col-lg-5">
+            <div class="main_title text-left">
+              <h2>
+                let’s <br />
+                Introduce about <br />
+                myself
+              </h2>
+              <!-- <p>
+                I'm an aspiring Full Stack Web Developer, with a specialization in HTML, CSS, JavaScript, TypeScript, MongoDB, Express.js, React.js and Node.js eager to learn new technologies to provide my skills for the organization's growth.
+              </p>
+
+              <p>
+                I'm Self-motivated and curious, with fast learning skills as well as an Observant and detail-oriented person with a keen interest in learning technology.
+              </p> -->
+              <p>
+                Welcome to my profile! I am a passionate Full Stack Developer with hands-on experience in building scalable and user-friendly web applications. Proficient in HTML, CSS, JavaScript, TypeScript, and frameworks like React.js and Angular. My backend expertise includes Java, Spring Boot, Node.js, and RESTful APIs, supported by database knowledge in MySQL and MongoDB. I have developed full-stack projects featuring JWT authentication, payment integration, and responsive design. With strong problem-solving skills and familiarity with tools like Git, Postman, and VS Code, I thrive in collaborative environments and am committed to delivering efficient, high-quality solutions that meet user and business needs.
+              </p>
+
+              <p>
+                Explore my portfolio to see examples of my work, and feel free to reach out for collaboration opportunities. I am excited about the prospect of contributing my skills to innovative and impactful projects.
+              </p>
+              <a
+                target="_blank"
+                class="primary_btn"
+                href="https://publuu.com/flip-book/931803/2042631"
+                ><span>Download Resume</span></a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--================ End About Us Area =================-->
+
+     <!-- ===============scroll down button ============ -->
+<a onclick="changeColor('navdoc3', 'Experience')" href="#experiencediv" id="fixed-up-arrow"><div>
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><!--! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M192 384c-8.188 0-16.38-3.125-22.62-9.375l-160-160c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0L192 306.8l137.4-137.4c12.5-12.5 32.75-12.5 45.25 0s12.5 32.75 0 45.25l-160 160C208.4 380.9 200.2 384 192 384z"/></svg>
+</div>    </a>
+ <!-- ===============scroll down button ============ -->
+
+    <!-- ================experience================= -->
+    <section class="about_area section_gap" id="experiencediv">
+      <div class="container">
+        <div class="row justify-content-start align-items-center" id="about">
+          
+
+          <div class="offset-lg-1 col-lg-5">
+            <div class="main_title text-left">
+              <h2>
+                experience
+              </h2>
+              <ul>
+                <li>
+                  <div>
+                    <h3>Front End Developer</h3>
+                    <a class="company-name" target="_blank" href="https://sevenmind.in/">
+                      <img class="company-logo" src="./img/company logo/sevenmind.svg" alt="Sevenmind Technology Logo">
+                      <h4>SEVENMIND TECHNOLOGY</h4>
+                    </a>
+                    <p id="currentExperience"></p>
+                    <!-- HTML element to display internship experience -->
+                      <p id="internshipExperience"></p>
+
+                      <script>
+                        // Internship dates
+                        var startDate = new Date('2024-04-15');
+                        var endDate = new Date('2024-11-15');
+
+                        // Calculate total months between dates
+                        var totalMonths = (endDate.getFullYear() - startDate.getFullYear()) * 12 +
+                                          (endDate.getMonth() - startDate.getMonth());
+
+                        // Calculate years and remaining months
+                        var experienceYears = Math.floor(totalMonths / 12);
+                        var experienceMonths = totalMonths % 12;
+
+                        // Console output
+                        console.log(`Internship Duration: ${experienceYears} years and ${experienceMonths} months`);
+
+                        // Update HTML with internship duration
+                        document.getElementById('internshipExperience').innerHTML =
+                          `Internship Duration: ${experienceYears} yrs & ${experienceMonths} mos (April 2024 - Nov 2024)`;
+                      </script>
+
+                    <div>
+                        <h5>Responsibilities</h5>
+
+                        <ul class="visible-list">
+                          <li><strong>Requirements:</strong>  Collaborate with stakeholders to understand user and system needs for UI development.</li>
+                          <li><strong>UI Development:</strong> Build responsive and dynamic interfaces using Angular, HTML, CSS, JS, and TS.</li>
+                          <li><strong>Testing:</strong> Perform unit and integration testing to ensure high-quality, bug-free releases. 
+                            <button class="more-button" onclick="toggleResponsibilities()"><h6>Show More</h6></button></li>
+                        </ul>
+
+                        <ul class="hidden-list hidden">
+                          <li><strong>Agile Development: </strong> Participate in agile processes like sprint planning, daily stand-ups, and reviews.</li>
+                          <li><strong>Deployment:</strong> Assist in deploying front-end code to development and production environments.</li>
+                          <li><strong>Task Management:</strong> Prioritize and complete assigned front-end tasks effectively within deadlines.</li>
+                          <li><strong>Code Quality:</strong> Write clean, reusable code and review code from team members for performance and consistency.</li>
+                          <li><strong>Documentation:</strong> Ensure comprehensive technical documentation.</li>
+                          <li><strong>Production Support:</strong> Handle UI-related production issues and provide timely resolutions.</li>
+                          <li><strong>Feature Definition:</strong> Collaborate with product management to define new features, providing required specifications. 
+                            <button class="less-button" onclick="toggleResponsibilities()"><h6>Show Less</h6></button></li>
+                        </ul>
+                    
+
+                        <script>
+                          function toggleResponsibilities() {
+                            const moreList = document.querySelector('.hidden-list');
+                            const moreButton = document.querySelector('.more-button');
+                            const lessButton = document.querySelector('.less-button');
+
+                            moreList.classList.toggle('hidden');
+                            moreButton.style.display = moreList.classList.contains('hidden') ? 'inline' : 'none';
+                            lessButton.style.display = moreList.classList.contains('hidden') ? 'none' : 'inline';
+                          }
+                        </script>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+              <!-- <div>
+                <h3>Full Stack Web Developement</h3>
+                <h4>Masai School -Bangalore</h4>
+                <p>Dec 2021 to Jul 2022</p>
+              </div> -->
+
+              <!-- <div>
+                <h3>Bachelor of Science (Computer, First Class)</h3>
+                <h4>Shri Shivaji Arts, Commerce & Science college, Motala, Dist. Buldhana</h4>
+                <p>Jul 2018 to Aug 2021</p>
+              </div> -->
+
+              <!-- <div>
+                <h3>HSC (First Class)</h3>
+                <h4>Late Babanrao Deshpande Jr. college, Motala, Dist. Buldhana</h4>
+                <p>Jun 2017 to Feb 2018</p>
+              </div> -->
+            </div>
+          </div>
+
+
+            <div class="col-lg-5">
+              <div class="about_img">
+                <img class="" loading="lazy" src="img/portfolio/lazy-low.jpg" data-src="img/work experience.svg" alt="" />
+              </div>
+            </div>
+        </div>
+      </div>
+    </section>
+<!-- ================experience================= -->
+
+
+<a onclick="changeColor('navdoc4', 'Education')" href="#educatiodiv" id="fixed-up-arrow"><div>
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><!--! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M192 384c-8.188 0-16.38-3.125-22.62-9.375l-160-160c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0L192 306.8l137.4-137.4c12.5-12.5 32.75-12.5 45.25 0s12.5 32.75 0 45.25l-160 160C208.4 380.9 200.2 384 192 384z"/></svg>
+</div>    </a>
+ <!-- ===============scroll down button ============ -->
+
+    <!-- ================education================= -->
+    <section class="about_area section_gap" id="educatiodiv">
+      <div class="container">
+        <div class="row justify-content-start align-items-center" id="about">
+          
+          <div class="col-lg-5">
+              <div class="about_img">
+                <img class="" loading="lazy" src="img/portfolio/lazy-low.svg" data-src="img/Edu.svg" alt="" />
+              </div>
+            </div>
+
+          <div class="offset-lg-1 col-lg-5">
+            <div class="main_title text-left">
+              <h2>
+                education
+              </h2>
+              <ul>
+                <li>
+                  <div>
+                    <h3>Master's of Computer Applications (computer, First Class)</h3>
+                    <h4>Siddhant College of Computer Application</h4>
+                    <p> April 2022 to Jun 2024</p>
+                  </div>
+                </li>
+                <li>
+                  <div>
+                    <h3>Bachelor of Computer Application (Computer, First Class)</h3>
+                    <h4>G. S. Science, Arts & Commerce College, Khamgaon </h4>
+                    <p>Jul 2018 to Aug 2021</p>
+                  </div>
+                </li>
+                <li>
+                  <div>
+                    <h3>HSC </h3>
+                    <h4>Late. Babanrao Deshpande Jr. college, Motala, Dist. Buldhana</h4>
+                    <p>Jun 2017 to Feb 2018</p>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+
+            
+        </div>
+      </div>
+    </section>
+<!-- ================education================= -->
+
+
+
+     <!-- ===============scroll down button ============ -->
+     <a onclick="changeColor('navdoc5', 'Skills')" href="#featurediv" id="fixed-up-arrow"><div>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><!--! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M192 384c-8.188 0-16.38-3.125-22.62-9.375l-160-160c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0L192 306.8l137.4-137.4c12.5-12.5 32.75-12.5 45.25 0s12.5 32.75 0 45.25l-160 160C208.4 380.9 200.2 384 192 384z"/></svg>
+    </div>    </a>
+     <!-- ===============scroll down button ============ -->
+
+    <!--================ Start Features Area =================-->
+    <section class="features_area" id="featurediv">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-8 text-center">
+            <div class="main_title">
+              <h2>Skills</h2>
+              <p>
+                These are some of the skills that I have well known.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="row feature_inner">
+          <div class="col-lg-3 col-md-6">
+            <div class="feature_item">
+              <img src="img/portfolio/lazy-low.svg" data-src="img/services/s1.svg" loading="lazy" height="69px" alt="" />
+              <h4>HTML</h4>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <div class="feature_item">
+              <img src="img/portfolio/lazy-low.svg" data-src="img/services/s2.svg" loading="lazy" height="69px" alt="" />
+              <h4>CSS</h4>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <div class="feature_item">
+              <img src="img/portfolio/lazy-low.svg" data-src="img/services/s3.svg" loading="lazy" height="69px" alt="" />
+              <h4>JavaScript</h4>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <div class="feature_item">
+              <img src="img/portfolio/lazy-low.svg" data-src="img/services/s8.svg" loading="lazy" height="69px" alt="" />
+              <h4>TypeScript</h4>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <div class="feature_item">
+              <img src="img/portfolio/lazy-low.svg" data-src="img/services/s4.svg" loading="lazy" height="69px" alt="" />
+              <h4>MongoDB</h4>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <div class="feature_item">
+              <img src="img/portfolio/lazy-low.svg" data-src="img/services/s5.svg" loading="lazy" height="69px" alt="" />
+              <h4>Express.js</h4>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <div class="feature_item">
+              <img src="img/portfolio/lazy-low.svg" data-src="img/services/s6.svg" loading="lazy" height="69px" alt="" />
+              <h4>React.js</h4>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <div class="feature_item">
+              <img src="img/portfolio/lazy-low.svg" data-src="img/services/s7.svg" loading="lazy" height="69px" alt="" />
+              <h4>Node.js</h4>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6">
+            <div class="feature_item">
+              <img src="img/portfolio/lazy-low.svg" data-src="img/services/s9.svg" loading="lazy" height="69px" alt="" />
+              <h4>Angular</h4>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6">
+            <div class="feature_item">
+              <img src="img/portfolio/lazy-low.svg" data-src="img/services/s10.svg" loading="lazy" height="69px" alt="" />
+              <h4>Java</h4>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6">
+            <div class="feature_item">
+              <img src="img/portfolio/lazy-low.svg" data-src="img/services/s11.svg" loading="lazy" height="69px" alt="" />
+              <h4>Spring Boot</h4>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--================ End Features Area =================-->
+
+
+    <!-- ===============scroll down button ============ -->
+    <a onclick="changeColor('navdoc6', 'Projects')" href="#portfolio" id="fixed-up-arrow"><div>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><!--! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M192 384c-8.188 0-16.38-3.125-22.62-9.375l-160-160c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0L192 306.8l137.4-137.4c12.5-12.5 32.75-12.5 45.25 0s12.5 32.75 0 45.25l-160 160C208.4 380.9 200.2 384 192 384z"/></svg>
+    </div>    </a>
+     <!-- ===============scroll down button ============ -->
+
+    <!--================Start Portfolio Area =================-->
+    <section class="portfolio_area" id="portfolio">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="main_title text-left">
+              <h2>
+                Recently <br>
+                done project
+              </h2>
+            </div>
+          </div>
+        </div>
+
+        <div class="filters-content">
+          <div class="row portfolio-grid justify-content-center">
+            <div class="col-lg-4 col-md-6 all latest">
+              <div class="portfolio_box">
+                <div class="single_portfolio">
+                  <img
+                    class="img-fluid w-100"
+                    src="img/portfolio/lazy-low.jpg"
+                    data-src="img/portfolio/p1.png"
+                    loading="lazy"
+                    alt=""
+                  />
+                  <div class="overlay"></div>
+                  <a href="img/portfolio/p1.png"  class="img-gal">
+                    <div class="icon">
+                      <span class="lnr lnr-cross"></span>
+                    </div>
+                  </a>
+                </div>
+                <div class="short_info">
+                  <h4><a target="_blank" href="https://github.com/Kanchangaware/Expenses-Tracker">Expense+Tracker.com clone | <i class="fa fa-github"></i></a></h4>
+                  <p>
+                    Expenses Tracker is a Java-based personal finance web application that allows users to manage and track daily expenses. The app supports user login, expense categorization And CRUD operations monitoring.<br>
+                  </p>
+                  <hr>
+                   Expaeses Tracker <br>
+                  Java | SpringBoot | JSP | Hibernate | MySQL  <br>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6 all popular">
+              <div class="portfolio_box">
+                <div class="single_portfolio">
+                  <img
+                    class="img-fluid w-100"
+                    src="img/portfolio/lazy-low.svg"
+                    data-src="img/portfolio/p2.png"
+                    loading="lazy"
+                    alt=""
+                  />
+                  <div class="overlay"></div>
+                  <a href="img/portfolio/p2.png" class="img-gal">
+                    <div class="icon">
+                      <span class="lnr lnr-cross"></span>
+                    </div>
+                  </a>
+                </div>
+                <div class="short_info">
+                  <h4><a target="_blank" href="https://github.com/Kanchangaware/BankManagementSystem">BankManagement.com Clone | <i class="fa fa-github"></i></a></h4>
+                  <p>
+                     A web-based application that allows users to create account, manage customer data, perform transaction deposit, withdraw, transfer and track balance history. Admins can overse all account and operation through a secure dashboard. </p>
+                  <hr>
+                  E-Commerce <br>
+                  Java | Springboot | JSP | MySQL | Hibernate <br>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6 all latest">
+              <div class="portfolio_box">
+                <div class="single_portfolio">
+                  <img
+                    class="img-fluid w-100"
+                    src="img/portfolio/lazy-low.svg"
+                    data-src="img/portfolio/p3.png"
+                    loading="lazy"
+                    alt=""
+                  />
+                  <div class="overlay"></div>
+                  <a href="img/portfolio/p3.png" class="img-gal">
+                    <div class="icon">
+                      <span class="lnr lnr-cross"></span>
+                    </div>
+                  </a>
+                </div>
+                <div class="short_info">
+                  <h4><a target="_blank" href="">Portfolio.com Clone | <i class="fa fa-github"></i></a></h4>
+                  <p>
+                    A personal portfolio website responsive design principles to showcase my projects, skills, certifications, and resume. Includes smooth navigation, project previews, and contact form for easy communication.
+                  </p>
+                  <hr>
+                  E-Commerce <br>
+                  HTML | CSS | JavaScript  <br>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--================End Portfolio Area =================-->
+
+  <!-- ===============scroll down button ============ -->
+  <a onclick="changeColor('navdoc7', 'Contact Me')" href="#contactme" id="fixed-up-arrow"><div>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><!--! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M192 384c-8.188 0-16.38-3.125-22.62-9.375l-160-160c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0L192 306.8l137.4-137.4c12.5-12.5 32.75-12.5 45.25 0s12.5 32.75 0 45.25l-160 160C208.4 380.9 200.2 384 192 384z"/></svg>
+  </div>    </a>
+   <!-- ===============scroll down button ============ -->
+
+
+    <!--================Contact Area =================-->
+    <section class="contact_area section_gap">
+      <div class="container" id="contactme">
+        <div class="main_title text-left">
+          <h2>
+           Contact Me
+          </h2>
+        </div>
+        <div class="row">
+          <div class="col-lg-3">
+            <div class="contact_info">
+              <div class="info_item">
+                <i class="lnr lnr-home"></i>
+                <a target="_blank" href="https://www.google.com/maps/place/Buldana,+Maharashtra+443001/@20.5283896,76.1641766,13.54z/data=!4m6!3m5!1s0x3bda1df8cd6d9cb1:0x5f36a09324f0bb4d!8m2!3d20.5292147!4d76.1841701!16zL20vMDhzenIw?entry=ttu">
+                  <h6>Maharashtra, India</h6>
+                </a>
+                <p>Buldhana </p>
+              </div>
+              <div class="info_item">
+                <i class="lnr lnr-phone-handset"></i>
+                <a href="tel:+918308662968">
+                  <h6>+91 (830) 866 2968</h6>
+                </a>
+                <p>Mon to Fri 9am to 6 pm</p>
+              </div>
+              <div class="info_item">
+                <i class="lnr lnr-envelope"></i>
+                <a href="kanchangaware291@gmail.com">
+                  <h6>kanchangaware291@gmail.com</h6>
+                </a>
+                <p>Send us your query anytime!</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-9">
+            <!-- <form
+              class="row contact_form"
+              action="contact_process.php"
+              method="post"
+              id="contactForm"
+              novalidate="novalidate"
+            > -->
+            <form
+              class="row contact_form"
+              onsubmit="sendEmail(); return false";
+            >
+              <div class="col-md-6">
+                <div class="form-group">
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="name"
+                    name="name"
+                    placeholder="Enter your name"
+                  />
+                </div>
+                <div class="form-group">
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="email"
+                    name="email"
+                    placeholder="Enter email address"
+                  />
+                </div>
+                <div class="form-group">
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="subject"
+                    name="subject"
+                    placeholder="Enter Subject"
+                  />
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="form-group">
+                  <textarea
+                    class="form-control"
+                    name="message"
+                    id="message"
+                    rows="1"
+                    placeholder="Enter Message"
+                  ></textarea>
+                </div>
+              </div>
+              <div class="col-md-12 text-right">
+                <button type="submit" value="submit" class="primary_btn">
+                  <span>Send Message</span>
+                </button>
+
+                <a
+                href="mailto:kanchangaware291@gmail.com"
+                    target="_blank"
+                    class="primary_btn tr-bg" ><span>Send Email</span></a
+                  >
+              </div>
+            </form>
+          </div>
+        </div>
+        <script src="https://smtpjs.com/v3/smtp.js"></script>
+        <script>
+          function sendEmail()
+          {
+            Email.send({
+                To : 'kanchangaware291@gmail.com',
+                From : 'kanchangaware291@gmail.com',
+                Subject : document.getElementById("subject").value,
+                Body : `Name: ${document.getElementById("name").value}\n
+                        Email: ${document.getElementById("email").value}\n
+                        Subject: ${document.getElementById("subject").value}\n
+                        Mail: ${document.getElementById("message").value}`,
+            }).then(
+  //             message => alert(`Your message has been received to me...
+  // I will contact you soon, Thank You...`)
+                message => alert(`Temporary message service is unavailable. Please try sending the email instead of a message. We apologize for any inconvenience.`)
+            );
+          }
+          //xngwzmvupmaunzne
+        </script>
+        <!-- <div
+          id="mapBox"
+          class="mapBox"
+          data-lat="40.701083"
+          data-lon="-74.1522848"
+          data-zoom="13"
+          data-info="PO Box CT16122 Collins Street West, Victoria 8007, Australia."
+          data-mlat="40.701083"
+          data-mlon="-74.1522848"
+        ></div>
+      </div> -->
+    </section>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <!--================Contact Area =================-->
+<a onclick="changeColor('navdoc7', 'Contact Me')" href="#contactme" id="fixed-up-arrow"><div>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><!--! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M192 384c-8.188 0-16.38-3.125-22.62-9.375l-160-160c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0L192 306.8l137.4-137.4c12.5-12.5 32.75-12.5 45.25 0s12.5 32.75 0 45.25l-160 160C208.4 380.9 200.2 384 192 384z"></path></svg>
+  </div>    </a>
+    
+
+    <!--================Footer Area =================-->
+    <footer class="footer_area">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-12">
+            <div class="footer_top flex-column">
+              <div class="footer_logo">
+                <a onclick="changeColor('navdoc1', 'Home')" class="navbar-brand logo_h" href="#hometop">
+          
+                  <h1>
+                    <span><h1><</h1></span>
+                    Kanchan Gaware
+                    <span><h1>/></h1></span>
+                  </h1>
+                </a>
+                <h4>Follow Me</h4>
+              </div>
+              <div class="footer_social">
+                <a target="_blank" href="https://www.linkedin.com/in/kanchan-gaware-1a3a5b272/"><i class="fa fa-linkedin"></i></a>
+                <a target="_blank" href="https://github.com/Kanchangaware"><i class="fa fa-github"></i></a>
+                <a target="_blank" href="https://x.com/KGaware16648"><i class="fa fa-twitter"></i></a>
+                <a target="_blank" href="https://www.facebook.com"><i class="fa fa-facebook"></i></a>
+                <a target="_blank" href="https://www.instagram.com/kanchu_gaware/?hl=en"><i class="fa fa-instagram"></i></a>
+                <a target="_blank" href="https://app.netlify.com/teams/kanchangaware/projects"><i class="fa-solid fa-diamond"></i></i></a>
+              </div>
+            </div>
+          </div>
+          <!-- ==s=============scroll up button ============ -->
+    <a onclick="changeColor('navdoc1','Home')" href="#hometop" id="fixed-up-arrow"><div>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><!--! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M352 352c-8.188 0-16.38-3.125-22.62-9.375L192 205.3l-137.4 137.4c-12.5 12.5-32.75 12.5-45.25 0s-12.5-32.75 0-45.25l160-160c12.5-12.5 32.75-12.5 45.25 0l160 160c12.5 12.5 12.5 32.75 0 45.25C368.4 348.9 360.2 352 352 352z"/></svg>
+</div>    </a>
+     <!-- ===============scroll up button ============ -->
+        </div>
+        <!-- <div class="row footer_bottom justify-content-center">
+          <p class="col-lg-8 col-sm-12 footer-text">
+
+            Copyright &copy;
+            <script>
+              document.write(new Date().getFullYear());
+            </script>
+            All rights reserved | This template is made
+            <i class="fa fa-heart-o" aria-hidden="true"></i>
+            by
+            <a href="https://www.instagram.com/guddu_wagh" target="_blank">Bhushan Wagh </a>
+
+          </p>
+        </div> -->
+      </div>
+    </footer>
+    <!--================End Footer Area =================-->
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/popper.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/stellar.js"></script>
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <script src="vendors/nice-select/js/jquery.nice-select.min.js"></script>
+    <script src="vendors/isotope/imagesloaded.pkgd.min.js"></script>
+    <script src="vendors/isotope/isotope-min.js"></script>
+    <script src="vendors/owl-carousel/owl.carousel.min.js"></script>
+    <script src="js/jquery.ajaxchimp.min.js"></script>
+    <script src="js/mail-script.js"></script>
+    <!--gmaps Js-->
+    <!-- <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCjCGmQ0Uq4exrzdcL6rvxywDDOvfAu6eE"></script>
+    <script src="js/gmaps.min.js"></script> -->
+    <script src="js/theme.js"></script>
+    <script src="https://kit.fontawesome.com/824ebbc970.js" crossorigin="anonymous"></script>
+  </body>
+</html>
+<script>
+  const imgRef=document.querySelectorAll("img[data-src]");
+
+  const lazyImg=(entries)=>{
+    // const [entry]=entries;
+    // console.log(entry);
+
+
+    entries.forEach((entry)=>{
+      if(!entry.isIntersecting) return;
+      entry.target.src=entry.target.dataset.src
+    })
+
+    // if(!entry.isIntersecting) return;
+    // entry.target.src=imgRef.dataset.src
+  }
+
+  const imgObserver=new IntersectionObserver(lazyImg,{
+    root:null,
+    threshold:0
+  })
+
+  // imgObserver.observe(imgRef)
+
+  imgRef.forEach(ele => {
+    imgObserver.observe(ele)
+  });
+</script>
